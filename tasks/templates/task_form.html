@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if form.instance.pk %}Editar{% else %}Nova{% endif %} Tarefa - TaskMe</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1><span>Task</span>Me</h1>
+    </header>
+
+    <main class="container">
+        <h2>{% if form.instance.pk %}{{ form.instance.title }}{% else %}Nova Tarefa{% endif %}</h2>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <label for="id_title">Título</label>
+            {{ form.title }}
+
+            <label for="id_description">Descrição</label>
+            {{ form.description }}
+
+            <label for="id_status">Status</label>
+            <div id="id_status">
+                {% for radio in form.status %}
+                    <label>
+                        {{ radio.tag }}
+                        <span class="status 
+                            {% if radio.choice_label == 'Concluída' %}concluida
+                            {% elif radio.choice_label == 'Pendente' %}pendente
+                            {% elif radio.choice_label == 'Em Atraso' %}atrasada
+                            {% endif %}
+                        ">
+                            {{ radio.choice_label }}
+                        </span>
+                    </label>
+                {% endfor %}
+            </div>
+
+            <button type="submit" class="btn">
+                {% if form.instance.pk %}Salvar{% else %}Concluir{% endif %}
+            </button>
+        </form>
+    </main>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

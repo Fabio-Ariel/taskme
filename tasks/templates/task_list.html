@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMe - Tarefas</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1><span>Task</span>Me</h1>
+    </header>
+
+    <main class="container">
+        <h2>Tarefas</h2>
+        <a href="{% url 'task_create' %}" class="btn">+ Nova tarefa</a>
+
+        <ul class="task-list">
+            {% for task in tasks %}
+            <li class="task-item">
+                <a href="{% url 'task_detail' task.id %}" class="task-title">{{ task.title }}</a>
+                
+                <span class="status 
+                    {% if task.status == 'completed' %}concluida
+                    {% elif task.status == 'pending' %}pendente
+                    {% elif task.status == 'delayed' %}atrasada
+                    {% endif %}
+                ">
+                    {{ task.get_status_display }}
+                </span>
+            </li>
+            {% empty %}
+            <p>Nenhuma tarefa cadastrada.</p>
+            {% endfor %}
+        </ul>
+    </main>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

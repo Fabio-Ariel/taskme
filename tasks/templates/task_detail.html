@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ task.title }} - TaskMe</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1><span>Task</span>Me</h1>
+    </header>
+
+    <main class="container">
+        <h2>{{ task.title }}</h2>
+
+        <p><strong>Descrição</strong></p>
+        <p class="descricao">{{ task.description }}</p>
+
+        <p><strong>Status</strong></p>
+        <p>
+            <span class="status 
+                {% if task.status == 'completed' %}concluida
+                {% elif task.status == 'pending' %}pendente
+                {% elif task.status == 'delayed' %}atrasada
+                {% endif %}
+            ">
+                {{ task.get_status_display }}
+            </span>
+        </p>
+
+        <a href="{% url 'task_update' task.id %}" class="btn">Editar</a>
+    </main>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
