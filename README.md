@@ -79,7 +79,7 @@ taskme/
 ├── taskme_project/        # Configurações do Django
 │   ├── settings.py
 │   ├── urls.py
-│   └── wsgi.py
+│   └── wsgi.py 
 │
 ├── db.sqlite3             # Banco de dados local (ignorado no Git)
 ├── manage.py
@@ -88,20 +88,19 @@ taskme/
 ├── requirements.txt
 └── README.md
 ```
-```
+
 🖼️ Visual do Projeto
 A listagem de tarefas exibe os status com cores:
 
-Status	Cor
+Status	       Cor
 🟢 Concluída	Verde
-🟡 Pendente	Amarelo
-🔴 Atrasada	Vermelho
-```
-```
+🟡 Pendente	  Amarelo
+🔴 Atrasada	  Vermelho
+
 💡 Autor
 👤 Fabio Ariel
 📂 GitHub: @Fabio-Ariel
-```
+
 🛡️ Licença
 Este projeto está sob a licença MIT.
 Sinta-se livre para usar e modificar.
