@@ -65,7 +65,7 @@ Acesse no navegador:
 👉 http://127.0.0.1:8000
 
 📁 Estrutura do projeto
-bash
+```bash
 
 taskme/
 │
@@ -87,6 +87,7 @@ taskme/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 🖼️ Visual do Projeto
 A listagem de tarefas exibe os status com cores:
 
