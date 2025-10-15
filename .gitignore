@@ -1,0 +1,42 @@
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# --- DJANGO ---
+db.sqlite3
+media/
+staticfiles/
+.env
+*.log
+*.pot
+*.pyc
+
+# --- VENV ---
+venv/
+env/
+ENV/
+.venv/
+.Python
+
+# --- IDEs & SYSTEM FILES ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- TESTS ---
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+nosetests.xml
+coverage.xml
+
+# --- MISC ---
+*.bak
+*.tmp
