@@ -33,22 +33,22 @@ Ideal para organizar seu dia de forma leve e prática.
 ## 📦 Instalação e Execução
 
 ### 1️⃣ Clone o repositório
-```bash
+bash
 git clone https://github.com/Fabio-Ariel/taskme.git
 cd taskme
-2️⃣ Crie e ative o ambiente virtual
+### 2️⃣ Crie e ative o ambiente virtual
 bash
-Copiar código
+
 python -m venv venv
 # Ativar no Windows
 venv\Scripts\activate
 # Ativar no Linux/Mac
 source venv/bin/activate
-3️⃣ Instale as dependências
+### 3️⃣ Instale as dependências
 bash
 
 pip install -r requirements.txt
-4️⃣ Configure a chave secreta do Django
+### 4️⃣ Configure a chave secreta do Django
 Crie um arquivo chamado .env na raiz do projeto e adicione:
 
 bash
@@ -57,11 +57,11 @@ DJANGO_SECRET_KEY=sua_chave_secreta_aqui
 ⚠️ Importante: nunca compartilhe sua chave secreta.
 O .gitignore já impede que esse arquivo seja enviado ao GitHub.
 
-5️⃣ Aplique as migrações do banco
+### 5️⃣ Aplique as migrações do banco
 bash
 
 python manage.py migrate
-6️⃣ Inicie o servidor local
+### 6️⃣ Inicie o servidor local
 bash
 
 python manage.py runserver
@@ -69,8 +69,8 @@ Acesse no navegador:
 👉 http://127.0.0.1:8000
 
 📁 Estrutura do Projeto
+bash
 
-Copiar código
 taskme/
 │
 ├── tasks/                 # App principal
@@ -91,6 +91,7 @@ taskme/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+
 🎨 Status das Tarefas
 Status	Cor	Significado
 🟢 Concluída	Verde	Tarefa finalizada com sucesso
