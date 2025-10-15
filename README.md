@@ -91,17 +91,28 @@ taskme/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-🎨 Status das Tarefas
-Status	Cor	Significado
-🟢 Concluída	Verde	Tarefa finalizada com sucesso
-🟡 Pendente	Amarelo	Aguardando execução
-🔴 Atrasada	Vermelho	Prazo expirado
+```
 
-👤 Autor
-Fabio Ariel
-🔗 GitHub: @Fabio-Ariel
+## 🎨 Status das Tarefas
 
-🛡️ Licença
-Este projeto está sob a licença MIT — sinta-se livre para usar e modificar.
+| Status | Cor | Significado |
+|:-------:|:------:|:------------|
+| 🟢 **Concluída** | 🟩 Verde | Tarefa finalizada com sucesso |
+| 🟡 **Pendente** | 🟨 Amarelo | Aguardando execução |
+| 🔴 **Atrasada** | 🟥 Vermelho | Prazo expirado |
 
-💬 “Organize seu tempo. Gerencie suas tarefas. Simplifique sua rotina com o TaskMe.”
+---
+
+## 👤 Autor
+
+**Fabio Ariel**  
+🔗 GitHub: [@Fabio-Ariel](https://github.com/Fabio-Ariel)
+
+---
+
+## 🛡️ Licença
+
+Este projeto está sob a **licença MIT** — sinta-se livre para usar e modificar.  
+
+> 💬 *“Organize seu tempo. Gerencie suas tarefas. Simplifique sua rotina com o TaskMe.”*
+
