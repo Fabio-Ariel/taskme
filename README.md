@@ -33,7 +33,7 @@ git clone https://github.com/Fabio-Ariel/taskme.git
 cd taskme
 2️⃣ Crie e ative o ambiente virtual
 bash
-Copiar código
+
 python -m venv venv
 # Ativar no Windows
 venv\Scripts\activate
@@ -41,31 +41,31 @@ venv\Scripts\activate
 source venv/bin/activate
 3️⃣ Instale as dependências
 bash
-Copiar código
+
 pip install -r requirements.txt
 4️⃣ Configure a chave secreta do Django
 Crie um arquivo chamado .env na raiz do projeto e adicione:
 
 bash
-Copiar código
+
 DJANGO_SECRET_KEY=sua_chave_secreta_aqui
 ⚠️ Importante: nunca compartilhe sua chave secreta.
 O .gitignore já impede que esse arquivo seja enviado ao GitHub.
 
 5️⃣ Aplique as migrações do banco
 bash
-Copiar código
+
 python manage.py migrate
 6️⃣ Inicie o servidor local
 bash
-Copiar código
+
 python manage.py runserver
 Acesse no navegador:
 👉 http://127.0.0.1:8000
 
 📁 Estrutura do projeto
 bash
-Copiar código
+
 taskme/
 │
 ├── tasks/                 # App principal
