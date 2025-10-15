@@ -87,7 +87,7 @@ taskme/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-```
+
 🖼️ Visual do Projeto
 A listagem de tarefas exibe os status com cores:
 
@@ -105,3 +105,4 @@ Este projeto está sob a licença MIT.
 Sinta-se livre para usar e modificar.
 
 💬 “Organize seu tempo. Gerencie suas tarefas. Simplifique sua rotina com o TaskMe.”
+````
