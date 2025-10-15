@@ -87,7 +87,8 @@ taskme/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
+```
 🖼️ Visual do Projeto
 A listagem de tarefas exibe os status com cores:
 
@@ -95,14 +96,14 @@ Status	Cor
 🟢 Concluída	Verde
 🟡 Pendente	Amarelo
 🔴 Atrasada	Vermelho
-
+```
+```
 💡 Autor
 👤 Fabio Ariel
 📂 GitHub: @Fabio-Ariel
-
+```
 🛡️ Licença
 Este projeto está sob a licença MIT.
 Sinta-se livre para usar e modificar.
 
 💬 “Organize seu tempo. Gerencie suas tarefas. Simplifique sua rotina com o TaskMe.”
-````
